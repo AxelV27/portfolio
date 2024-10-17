@@ -1,0 +1,160 @@
+.projet{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projet h1,
+.competences h1,
+.acces h1{
+    color: #754ef9;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.projet-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.projet-content p,
+.acces-site p{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.projet-img img {
+    width: 450px;
+}
+
+.competences{
+    min-height: auto;
+    padding-bottom: 10rem;
+}
+
+.competences .competences-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.competences-container .competences-box {
+    flex: 1 1 20rem;
+    background: black;
+    padding: 2rem 1rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border-top: .6rem solid #754ef9;
+    border-bottom: .6rem solid #754ef9;
+    transition: .5s ease;
+}
+
+.competences-container .competences-box:hover{
+    transform: scale(1.02);
+}
+
+.competences-box i {
+    font-size: 5rem;
+    color: #754ef9;
+}
+
+.competences-box h2 {
+    font-size: 2rem;
+    transition: .5s ease;
+    color: #fff;
+}
+
+.competences-box:hover h2 {
+    color: #754ef9;
+}
+
+.competences-box p{
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+    color: #fff;
+}
+
+.acces-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acces-content img{
+    width: 400px;
+}
+
+.acces-site {
+    max-width: 44rem;
+}
+
+.acces-site-btn{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media(max-width: 1024px){
+    .projet-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .projet-img img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .competences-container .competences-box {
+        flex: 1 1 40%; 
+    }
+
+    .acces-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .acces-content img {
+        width: 100%; 
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .projet h1,
+    .competences h1,
+    .acces h1 {
+        font-size: 30px; 
+    }
+
+    .projet-content {
+        gap: 1rem; 
+    }
+
+    .projet-img img {
+        max-width: 100%; 
+    }
+
+    .competences-container .competences-box {
+        flex: 1 1 90%; 
+    }
+
+    .acces-site {
+        max-width: 90%; 
+    }
+
+    .acces-content {
+        flex-direction: column; 
+    }
+}
+
