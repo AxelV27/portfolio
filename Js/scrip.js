@@ -82,3 +82,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// carrousel
+
+const carouselImages = document.querySelector('.carousel-images');
+const images = document.querySelectorAll('.carousel-images img');
+let index = 0;
+
+// Définir le nombre d'images dans une variable CSS
+document.documentElement.style.setProperty('--image-count', images.length);
+
+function showNextImage() {
+    index = (index + 1) % images.length; // Passe à l'image suivante
+    const translateX = -index * (100 / images.length); // Utilise le nombre d'images pour calculer le décalage
+    carouselImages.style.transform = `translateX(${translateX}%)`;
+}
+
+// Change d'image toutes les 3 secondes
+setInterval(showNextImage, 3000);
+
+

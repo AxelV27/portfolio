@@ -24,14 +24,26 @@
 .projet-content p,
 .acces-site p{
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: 2rem 0 3rem;
 }
 
-.projet-img img {
-    width: 450px;
+.carousel {
+    position: relative;
+    overflow: hidden; 
+    max-width: 100%;
+    margin: 20px auto;
 }
 
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * var(--image-count)); 
+}
+
+.carousel-images img {
+    width: calc(100% / var(--image-count)); 
+}
 .competences{
     min-height: auto;
     padding-bottom: 10rem;
@@ -139,10 +151,6 @@
 
     .projet-content {
         gap: 1rem; 
-    }
-
-    .projet-img img {
-        max-width: 100%; 
     }
 
     .competences-container .competences-box {
