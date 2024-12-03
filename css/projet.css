@@ -15,10 +15,10 @@
 }
 
 .projet-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
-    gap: 4rem;
+    gap: 40px;
 }
 
 .projet-content p,
@@ -117,6 +117,7 @@
 
 @media(max-width: 1024px){
     .projet-content{
+        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
