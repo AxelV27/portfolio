@@ -95,9 +95,8 @@
 }
 
 .acces-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .acces-content img{
@@ -133,6 +132,7 @@
     }
 
     .acces-content {
+        display: flex;
         flex-direction: column; 
         align-items: center;
     }
