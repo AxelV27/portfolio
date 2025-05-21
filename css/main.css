@@ -213,7 +213,8 @@ section.visible {
     margin-bottom: 50px;
 }
 
-.services .competences,
+.services .langages,
+.services .frameworks,
 .services .outils{
     border: 2px solid #754ef9;
     border-radius: 20px;
@@ -222,7 +223,8 @@ section.visible {
 }
 
 .services .outils h3,
-.services .competences h3{
+.services .frameworks h3,
+.services .langages h3{
     background: black;
     color: #754ef9;
     font-size: 1.8rem;
@@ -243,14 +245,16 @@ section.visible {
 
 }
 
-.services .competences ul,
+.services .langages ul,
+.services .frameworks ul,
 .services .outils ul{
     align-self:flex-start;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.services .competences li,
+.services .langages li,
+.services .frameworks li,
 .services .outils li{
     margin: 10px;
     text-align: center;
@@ -260,7 +264,8 @@ section.visible {
     flex-direction: column;
 }
 
-.services .competences li i,
+.services .langages li i,
+.services .frameworks li i,
 .services .outils li i{
     font-size: 4rem;
 }
@@ -290,8 +295,20 @@ section.visible {
     color: #754ef9;
 }
 
+.vue{
+   color: #42b883;
+}
+
 .node-js{
     color: #6cc24a;
+}
+
+.wordpress{
+    color: #21759b;
+}
+
+.docker{
+  color: #0db7ed;
 }
 /*section projets*/
 
